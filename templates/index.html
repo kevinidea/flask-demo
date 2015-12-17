@@ -1,0 +1,35 @@
+<!doctype html>
+<head>
+	<title>USER INPUT</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div>
+		<h3>This program will display a dynamic chart of stock price in the last 90 days of your chosen stock ticker. </h3>
+  		<h3>You can zoom in, zoom out, resize, drag around in the chart.</h3>
+		<h4>Please enter a stock ticker (e.g. GOOG, YHOO, DOW etc), and check desired features.</h4>
+  		<form id='ticker_input' method='post' action='result'>
+    		<p>
+    		Ticker symbol: <input type='text' name='ticker' />
+      	</p>
+      	<p>
+    		Opening price <input type='checkbox' name='feature' value='Open' />
+      	</p>
+           <p>
+      	Highest price <input type='checkbox' name='feature' value='High' />
+      	</p>
+           <p>
+           Lowest Price <input type='checkbox' name='feature' value='Low' />
+           </p>
+           <p>
+      	Closing price <input type='checkbox' name='feature' value='Close' />
+      	</p>
+      	<p>
+    		<input type='submit' value='Submit' />
+      	</p>
+    	</form>
+	</div>
+</body>
+</html>
